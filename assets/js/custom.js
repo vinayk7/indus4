@@ -25,22 +25,32 @@ function jsonpCBRecApps(res) {
         flag_var = 1;
         //}
 
-        if (mobile_width <= 320 && app > 3) {
-            container_div.classList.add("fourinch");
-        }
-
     }
     //alert(mobile_width);
 
     // expand arrow for devices less than 320p
-    if (mobile_width <= 320) {
+    
+    mql = window.matchMedia('(max-width: 320px)');
+    if (mql.matches) {
+        var icoColl = document.querySelectorAll('.fig_div:nth-last-child(-n+4)');
+        for (var i = 0; i < icoColl.length; i++) {
+            icoColl[i].classList.add('fourinch');
+        }
         var nextdiv = document.createElement("a");
         nextdiv.id = 'change_arrowicon'
-        nextdiv.className = 'glyph-icon flaticon-down-arrow';
+        //nextdiv.className = 'glyph-icon flaticon-down-arrow';
+
+        var arrImg = document.createElement("img");
+        arrImg.id = 'arrow_img';
+        arrImg.src = 'assets/images/down-arrow-sc.svg';
+        nextdiv.appendChild(arrImg);
+
         nextdiv.href = "javascript:show_nextitem();"
 
-        $recommended_app_section.appendChild(nextdiv);
+        document.getElementById('recommended_app_section').appendChild(nextdiv);
     }
+    flag_var = 1;
+    
 
     //            
 }
