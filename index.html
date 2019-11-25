@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <script>
+            var timerStart = Date.now();
+    </script>
+    
+    <script src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+    <script src="https://www.googletagmanager.com/gtag/js?id=UA-47795566-10"></script>
+    <script>
+            var timerStart = Date.now();
+            console.log("initialised @: %c"+ (Date.now()-timerStart) + ' ms', 'color:blue;');///DEBUG 
+
+            window.addEventListener('load', function(){
+                console.log("Page load complete@: %c "+ (Date.now()-timerStart) + ' ms ', 'color:white;background-color:darkviolet'); 
+                //alert('Page loading took: ' +  ((Date.now()-timerStart)/1000).toFixed(2) + ' seconds' )
+            });
+    </script>
+<head>
+    <title>Indus News</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <style type="text/css" media="handheld">
+    /* rules for mobile devices that don't support media queries */
+    body {
+        font-size: 80%;
+    }
+    </style>
+</head>
+<body>
+    <!-- google optimisation suggestions -->
+    
+    <link rel="preconnect" href="assets/js/custom.js" as="script">
+    <link rel="preconnect" href="assets/css/indu_global.css">
+    <link rel="dns-prefetch" href="https://kme46.siteplug.com">
+    <link rel="dns-prefetch" href="https://static-02.siteplug.com">
+    <link rel="dns-prefetch" href="https://feed.dailyhunt.in">
+    <link rel="preconnect" href="https://backfills.ph.affinity.com">
+    <link rel="preconnect" href="https://assets-news-bcdn-ll.dailyhunt.in">
+    <link rel="preconnect" href="https://pagead2.googlesyndication.com">
+    <link rel="preconnect" href="https://log.outbrainimg.com">
+    <link rel="preconnect" href="https://static-02.siteplug.com">
+    
+    <div class="indus_middle" id="indus_cont">
+        <div id="indus_cont_five">
+            
+            <!--  Search Bar  -->
+            <header>
+                <div class="row_search top-buffer">
+                    <div class="search_fixed">
+                        <div class="search-bar">
+                            <div id="search" class="input-group">
+                                <input class="form-control" name="q" type="text" id="search_in_page" placeholder="Search here.." required style="display: none;" />
+                                <div class="input-group-btn" id="search_button">
+                                    <button class="btn btn-default" id="button-icon">
+                                        <img src="./assets/images/search1.svg" alt="search" aria-describedby="search button">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="site_suggest_box" style="display:none;">
+                            <ul class=" site_suggest_ads list-unstyled result-bucket"></ul>
+                        </div>
+                    </div>
+                    <div class="search_space_fix"></div>
+                </div>
+                <!--  Site Suggest  -->
+            </header>
+            
+            <section class="indus_sections">
+                <div class="flex-container">
+                    <!--  Recommended Apps  -->
+                    <div class="vertical-center-row top-buffer recommended_app_wrap">
+                        <div id="recommended_app_section">
+                            <div class="col-xs-3 panel" id="fig_div_0">
+                                <div class="panel-body">
+                                    <a id="app_url_0" href=""></a>
+                                    <img class="img-responsive img-thumbnail center-block recommended_apps" id="app_image_0" style="display:none;">
+                                    <div class="panel-heading word-wrap recommended_apps_name" id="recommended_apps_name_0"></div>
+                                </div>
+                            </div>
+                            <div class="col-xs-3 panel" id="fig_div_1">
+                                <div class="panel-body">
+                                    <a id="app_url_1" href=""></a>
+                                    <img class="img-responsive img-thumbnail center-block recommended_apps" id="app_image_1" style="display:none;">
+                                    <div class="panel-heading word-wrap recommended_apps_name" id="recommended_apps_name_1"></div>
+                                </div>
+                            </div>
+                            <div class="col-xs-3 panel" id="fig_div_2">
+                                <div class="panel-body">
+                                    <a id="app_url_2" href=""></a>
+                                    <img class="img-responsive img-thumbnail center-block recommended_apps" id="app_image_2" style="display:none;">
+                                    <div class="panel-heading word-wrap recommended_apps_name" id="recommended_apps_name_2"></div>
+                                </div>
+                            </div>
+                            <div class="col-xs-3 panel" id="fig_div_3">
+                                <div class="panel-body">
+                                    <a id="app_url_3" href=""></a>
+                                    <img class="img-responsive img-thumbnail center-block recommended_apps" id="app_image_3" style="display:none;">
+                                    <div class="panel-heading word-wrap recommended_apps_name" id="recommended_apps_name_3"></div>
+                                </div>
+                            </div>
+                            <div class="col-xs-3 panel" id="fig_div_4">
+                                <div class="panel-body">
+                                    <a id="app_url_4" href=""></a>
+                                    <img class="img-responsive img-thumbnail center-block recommended_apps" id="app_image_4" style="display:none;">
+                                    <div class="panel-heading word-wrap recommended_apps_name" id="recommended_apps_name_4"></div>
+                                </div>
+                            </div>
+                            <div class="col-xs-3 panel" id="fig_div_5">
+                                <div class="panel-body">
+                                    <a id="app_url_5" href=""></a>
+                                    <img class="img-responsive img-thumbnail center-block recommended_apps" id="app_image_5" style="display:none;">
+                                    <div class="panel-heading word-wrap recommended_apps_name" id="recommended_apps_name_5"></div>
+                                </div>
+                            </div>
+                            <div class="col-xs-3 panel" id="fig_div_6">
+                                <div class="panel-body">
+                                    <a id="app_url_6" href=""></a>
+                                    <img class="img-responsive img-thumbnail center-block recommended_apps" id="app_image_6" style="display:none;">
+                                    <div class="panel-heading word-wrap recommended_apps_name" id="recommended_apps_name_6"></div>
+                                </div>
+                            </div>
+                            <div class="col-xs-3 panel" id="fig_div_7">
+                                <div class="panel-body">
+                                    <a id="app_url_7" href=""></a>
+                                    <img class="img-responsive img-thumbnail center-block recommended_apps" id="app_image_7" style="display:none;">
+                                    <div class="panel-heading word-wrap recommended_apps_name" id="recommended_apps_name_7"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+ 
+                    <!--  TopNews Section  -->
+                    <div class="indus_full" id="indus_full">
+                        <ul id="all_news" class="top_news_section top-buffer">
+                            <li id="top_news_0">
+                                <div class="top_div">
+                                    <a id="news_href_0" href="">
+                                        <div class="col-xs-12" id="pic">
+                                            <img id="news_image_0" class="img-r-esponsive img-rounded img-auto">
+                                        </div>
+                                        <div class="col-xs-12">
+                                            <div class="first_top_news">
+                                                <div class="top_news_pro">
+                                                    <img id="source_image_0" class="img-r-esponsive img-auto">
+                                                    <span class="source_name" id="source_name_0"></span>
+                                                </div>
+                                                <b id="news_heading_0" class="bwrap"></b>
+                                                <div class="source_image">
+                                                    <h6 id="publishTime_0" class="publishTime"></h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            
+                            <!-- Ad divs -->
+                            <li id="top_news_ads1" style="display:none;">
+                                <div id="div-gpt-ad-1551357349271-9" class="top_div1"></div>
+                            </li>
+                            <li id="top_news_ads2" style="display:none;">
+                                <div id="div-gpt-ad-1565767605361-0" class="top_div1"></div>
+                            </li>
+                            
+                            <li id="top_news_1">
+                                <div class="top_div">
+                                    <a id="news_href_1" href="">
+                                        <div class="col-xs-12" id="pic">
+                                            <img id="news_image_1" class="img-r-esponsive img-rounded img-auto">
+                                        </div>
+                                        <div class="col-xs-12">
+                                            <div class="first_top_news">
+                                                <div class="top_news_pro">
+                                                    <img id="source_image_1" class="img-r-esponsive img-auto">
+                                                    <span class="source_name" id="source_name_1"></span>
+                                                </div>
+                                                <b id="news_heading_1" class="bwrap"></b>
+                                                <div class="source_image">
+                                                    <h6 id="publishTime_1" class="publishTime"></h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+</li>
+                            <li id="top_news_2">
+                                <div class="top_div">
+                                    <a id="news_href_2" href="">
+                                        <div class="col-xs-9">
+                                            <div class="top_news_pro">
+                                                <img id="source_image_2" class="top_mar">
+                                                <span class="source_name" id="source_name_2"></span>
+                                            </div>
+                                            <b id="news_heading_2" class="bwrap"></b>
+                                            <div class="source_image">
+                                                <h6 id="publishTime_2" class="publishTime"></h6>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-3" id="pic">
+                                            <img id="news_image_2" class="img-r-esponsive img-rounded img-auto feeds_right">
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li id="top_news_3">
+                                <div class="top_div">
+                                    <a id="news_href_3" href="">
+                                        <div class="col-xs-9">
+                                            <div class="top_news_pro">
+                                                <img id="source_image_3" class="top_mar">
+                                                <span class="source_name" id="source_name_3"></span>
+                                            </div>
+                                            <b id="news_heading_3" class="bwrap"></b>
+                                            <div class="source_image">
+                                                <h6 id="publishTime_3" class="publishTime"></h6>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-3" id="pic">
+                                            <img id="news_image_3" class="img-r-esponsive img-rounded img-auto feeds_right">
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li id="top_news_4">
+                                <div class="top_div">
+                                    <a id="news_href_4" href="">
+                                        <div class="col-xs-9">
+                                            <div class="top_news_pro">
+                                                <img id="source_image_4" class="top_mar">
+                                                <span class="source_name" id="source_name_4"></span>
+                                            </div>
+                                            <b id="news_heading_4" class="bwrap"></b>
+                                            <div class="source_image">
+                                                <h6 id="publishTime_4" class="publishTime"></h6>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-3" id="pic">
+                                            <img id="news_image_4" class="img-r-esponsive img-rounded img-auto feeds_right">
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li id="top_news_5">
+                                <div class="top_div">
+                                    <a id="news_href_5" href="">
+                                        <div class="col-xs-9">
+                                            <div class="top_news_pro">
+                                                <img id="source_image_5" class="top_mar">
+                                                <span class="source_name" id="source_name_5"></span>
+                                            </div>
+                                            <b id="news_heading_5" class="bwrap"></b>
+                                            <div class="source_image">
+                                                <h6 id="publishTime_5" class="publishTime"></h6>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-3" id="pic">
+                                            <img id="news_image_5" class="img-r-esponsive img-rounded img-auto feeds_right">
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li id="top_news_6">
+                                <div class="top_div">
+                                    <a id="news_href_6" href="">
+                                        <div class="col-xs-9">
+                                            <div class="top_news_pro">
+                                                <img id="source_image_6" class="top_mar">
+                                                <span class="source_name" id="source_name_6"></span>
+                                            </div>
+                                            <b id="news_heading_6" class="bwrap"></b>
+                                            <div class="source_image">
+                                                <h6 id="publishTime_6" class="publishTime"></h6>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-3" id="pic">
+                                            <img id="news_image_6" class="img-r-esponsive img-rounded img-auto feeds_right">
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li id="top_news_7">
+                                <div class="top_div">
+                                    <a id="news_href_7" href="">
+                                        <div class="col-xs-9">
+                                            <div class="top_news_pro">
+                                                <img id="source_image_7" class="top_mar">
+                                                <span class="source_name" id="source_name_7"></span>
+                                            </div>
+                                            <b id="news_heading_7" class="bwrap"></b>
+                                            <div class="source_image">
+                                                <h6 id="publishTime_7" class="publishTime"></h6>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-3" id="pic">
+                                            <img id="news_image_7" class="img-r-esponsive img-rounded img-auto feeds_right">
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li id="top_news_8">
+                                <div class="top_div">
+                                    <a id="news_href_8" href="">
+                                        <div class="col-xs-9">
+                                            <div class="top_news_pro">
+                                                <img id="source_image_8" class="top_mar">
+                                                <span class="source_name" id="source_name_8"></span>
+                                            </div>
+                                            <b id="news_heading_8" class="bwrap"></b>
+                                            <div class="source_image">
+                                                <h6 id="publishTime_8" class="publishTime"></h6>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-3" id="pic">
+                                            <img id="news_image_8" class="img-r-esponsive img-rounded img-auto feeds_right">
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li id="top_news_9">
+                                <div class="top_div">
+                                    <a id="news_href_9" href="">
+                                        <div class="col-xs-9">
+                                            <div class="top_news_pro">
+                                                <img id="source_image_9" class="top_mar">
+                                                <span class="source_name" id="source_name_9"></span>
+                                            </div>
+                                            <b id="news_heading_9" class="bwrap"></b>
+                                            <div class="source_image">
+                                                <h6 id="publishTime_9" class="publishTime"></h6>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-3" id="pic">
+                                            <img id="news_image_9" class="img-r-esponsive img-rounded img-auto feeds_right">
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li id="top_news_10">
+                                <div class="top_div">
+                                    <a id="news_href_10" href="">
+                                        <div class="col-xs-9">
+                                            <div class="top_news_pro">
+                                                <img id="source_image_10" class="top_mar">
+                                                <span class="source_name" id="source_name_10"></span>
+                                            </div>
+                                            <b id="news_heading_10" class="bwrap"></b>
+                                            <div class="source_image">
+                                                <h6 id="publishTime_10" class="publishTime"></h6>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-3" id="pic">
+                                            <img id="news_image_10" class="img-r-esponsive img-rounded img-auto feeds_right">
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li id="top_news_11">
+                                <div class="top_div">
+                                    <a id="news_href_11" href="">
+                                        <div class="col-xs-9">
+                                            <div class="top_news_pro">
+                                                <img id="source_image_11" class="top_mar">
+                                                <span class="source_name" id="source_name_11"></span>
+                                            </div>
+                                            <b id="news_heading_11" class="bwrap"></b>
+                                            <div class="source_image">
+                                                <h6 id="publishTime_11" class="publishTime"></h6>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-3" id="pic">
+                                            <img id="news_image_11" class="img-r-esponsive img-rounded img-auto feeds_right">
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li id="top_news_12">
+                                <div class="top_div">
+                                    <a id="news_href_12" href="">
+                                        <div class="col-xs-9">
+                                            <div class="top_news_pro">
+                                                <img id="source_image_12" class="top_mar">
+                                                <span class="source_name" id="source_name_12"></span>
+                                            </div>
+                                            <b id="news_heading_12" class="bwrap"></b>
+                                            <div class="source_image">
+                                                <h6 id="publishTime_12" class="publishTime"></h6>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-3" id="pic">
+                                            <img id="news_image_12" class="img-r-esponsive img-rounded img-auto feeds_right">
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li id="top_news_13">
+                                <div class="top_div">
+                                    <a id="news_href_13" href="">
+                                        <div class="col-xs-9">
+                                            <div class="top_news_pro">
+                                                <img id="source_image_13" class="top_mar">
+                                                <span class="source_name" id="source_name_13"></span>
+                                            </div>
+                                            <b id="news_heading_13" class="bwrap"></b>
+                                            <div class="source_image">
+                                                <h6 id="publishTime_13" class="publishTime"></h6>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-3" id="pic">
+                                            <img id="news_image_13" class="img-r-esponsive img-rounded img-auto feeds_right">
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li id="top_news_14">
+                                <div class="top_div">
+                                    <a id="news_href_14" href="">
+                                        <div class="col-xs-9">
+                                            <div class="top_news_pro">
+                                                <img id="source_image_14" class="top_mar">
+                                                <span class="source_name" id="source_name_14"></span>
+                                            </div>
+                                            <b id="news_heading_14" class="bwrap"></b>
+                                            <div class="source_image">
+                                                <h6 id="publishTime_14" class="publishTime"></h6>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-3" id="pic">
+                                            <img id="news_image_14" class="img-r-esponsive img-rounded img-auto feeds_right">
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    
+<script>
+ 
+    var worker = null;
+    var newsTimer = 0;
+    var arrAds = ['/42115163/IP_start.indusos.com_320X100_Mobile', '/42115163/IP_start.indusos.com_300X250_Mobile'];
+    var smallAdInterval = 1; // how much gap between news feeds and small ad (1st) : n - [1 to 10]
+    var bigAdInterval = 6; // how much gap between news feeds and big ad (2nd) : n - [1 to 10]
+    var adSlot1, adSlot2;
+
+    var pageSize = 15;
+    var pageNumber = 1;
+    var newsAppKey = 'DVj2UsFaFnN+3kn4VHWPS9hUiLCz4eOtblRfAUrDC50=';
+    var current_parameter = getUrlParameter(window.location.search.substring(1))["IMEI"];
+    var scrollDir = 'up';
+    var nextPageUrl = '';
+    var newsRenderIndex = 0;
+    var alreadyLoading = false;
+    var arrayDisplayedNews = [];
+    var lastBottomPos = 0;
+
+    var flag_var = 0;
+
+    var docHeight = 0;
+    var winHeight = 0;
+
+    
+    //-------------------------------------------------------
+    var current_parameter = getUrlParameter(window.location.search.substring(1))["IMEI"];
+    var $recommended_app_section = document.getElementById("recommended_app_section");
+    var mobile_width = screen.width;
+    findHighestNode(document.documentElement.childNodes)
+    winHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+    function dqs(sel) { return document.querySelector(sel); }
+    
+    // GOOGLE ad
+    var gptadslots = [];
+    var googletag = googletag || {cmd:[]};
+    
+    googletag.cmd.push(function() {
+        
+        googletag.pubads().enableSingleRequest(); //SRA
+        googletag.pubads().collapseEmptyDivs();
+        // unhide div when ad loads
+        googletag.pubads().addEventListener('slotRenderEnded', function(event) {
+            if(event.slot.getAdUnitPath() == arrAds[0]) {
+                dqs('#div-gpt-ad-1551357349271-9 div iframe').onload = function(){ 
+                    document.getElementById('top_news_ads1').style.display = 'block';
+                }
+            }
+            if(event.slot.getAdUnitPath() == arrAds[1]) {
+                dqs('#div-gpt-ad-1565767605361-0 div iframe').onload = function(){
+                    document.getElementById('top_news_ads2').style.display = 'block';
+                }
+            }
+        });
+
+        adSlot1 = googletag.defineSlot('/42115163/IP_start.indusos.com_320X100_Mobile', [[320, 100]], "div-gpt-ad-1551357349271-9")
+            .addService(googletag.pubads());
+
+        adSlot2 = googletag.defineSlot('/42115163/IP_start.indusos.com_300X250_Mobile', [[300, 250]],'div-gpt-ad-1565767605361-0')
+            .addService(googletag.pubads());
+        //googletag.NamedSize = 'fluid';
+        googletag.enableServices();
+        googletag.display('div-gpt-ad-1551357349271-9');
+        googletag.display('div-gpt-ad-1565767605361-0');
+    });
+    
+    /*
+    @ get the URL parameter off the url*/
+    function getUrlParameter(uri) {
+        var sPageURL = decodeURIComponent(uri),
+            sURLVariables = sPageURL.split('&'),
+            sParameterName,
+            i;
+        var param_dict = {};
+        for (i = 0; i < sURLVariables.length; i++) {
+            sParameterName = sURLVariables[i].split('=');
+            param_dict[sParameterName[0]] = sParameterName[1];
+        }
+        return param_dict;
+    };
+
+    //document height
+    function findHighestNode(nodesList) {
+        for (var i = nodesList.length - 1; i >= 0; i--) {
+            if (nodesList[i].scrollHeight && nodesList[i].clientHeight) {
+                var elHeight = Math.max(nodesList[i].scrollHeight, nodesList[i].clientHeight);
+                docHeight = Math.max(elHeight, docHeight);
+            }
+            if (nodesList[i].childNodes.length) findHighestNode(nodesList[i].childNodes);
+        }
+    }
+
+
+    /*********************/
+    /** LOAD WEB WORKER **/
+    /*********************/
+    worker = new Worker("./assets/js/task.js");
+
+    /* Message event handler */
+    worker.onmessage = function(e) {
+
+        if(e.data.event == 'load_news')
+        {
+            var data = e.data.data;
+            data = JSON.parse(data);
+
+            if (data.code == 200) {
+                if (parseInt(data.data.count) > 0) 
+                {
+                    var data_from_wow = data.data.rows;//data.data.rows.slice(0, 10);
+                    // dailyhunt BUG: not  consideting pageSize key
+
+                    //append first 10 using static html
+                    for (var i = 0; i < data_from_wow.length; i++) {
+
+                        var newsImg = document.querySelector("#news_image_" + i.toString())
+                        if(typeof data_from_wow[i]['images'][0]!= 'undefined')
+                        {
+                            var image_array = data_from_wow[i]['images'][0];
+                            var newsId = data_from_wow[i]['id'];
+                            arrayDisplayedNews.push(newsId);
+                            //make first news image bigger
+                            if (!!image_array) {
+                                if (i == 0) {
+                                    image_array = image_array.replace(/{CMD}/g, "crop").replace(/{W}x{H}_{Q}/g, "700x400_80").replace(/{EXT}/g, "webp");
+                                    newsImg.setAttribute("src", image_array);
+
+                                } else {
+                                    image_array = image_array.replace(/{CMD}/g, "crop").replace(/{W}x{H}_{Q}/g, "150x150_90").replace(/{EXT}/g, "webp");
+                                    //newsImg.setAttribute("src", image_array);
+                                     newsImg.setAttribute("data-src", image_array);
+                                     newsImg.classList.add("lazy");
+
+                                    // newsImg.setAttribute("width", '100');
+                                    // newsImg.setAttribute("height", '100');
+                                }
+                            }
+                        }
+                        else
+                            newsImg.parentNode.removeChild(newsImg); // empty images[]
+                        
+                        
+                        var srcImg = data_from_wow[i]['sourceLogo'];
+                        if(srcImg.indexOf('{CMD}') !== -1)
+                        {
+                            srcImg = srcImg.replace(/{CMD}/g, "crop").replace(/{W}x{H}_{Q}/g, "96x96_60").replace(/{EXT}/g, "webp");
+                        }
+                        srcImg = srcImg.replace('96x96_60', '25x25_60'); // replace image res.
+                        var srcImgEl = document.querySelector("#source_image_" + i);
+                        srcImgEl.setAttribute("src", srcImg);
+                        document.querySelector('#news_heading_' + i).innerText = data_from_wow[i]['title'];
+                        document.querySelector('#news_href_' + i).setAttribute("href", (data_from_wow[i]['deepLinkUrl']));
+
+                        if(typeof data_from_wow[i]['recommendationTs'] != 'undefined')
+                        var publish_time = new Date(data_from_wow[i]['recommendationTs']);
+                        else
+                        var publish_time = new Date(data_from_wow[i]['publishTime']);
+
+                        document.querySelector('#publishTime_' + i).innerText = timeSince(publish_time);
+                        document.querySelector('#top_news_' + i).setAttribute('data-title', data_from_wow[i]['title']);
+                        document.querySelector('#top_news_' + i).setAttribute('data-url', data_from_wow[i]['deepLinkUrl']);
+                        document.querySelector('#source_name_' + i).innerText = data_from_wow[i]['source'];
+                        /*
+                         track_data.stories.push({
+                             "id": data_from_wow[i]['id'],
+                             "trackData": data_from_wow[i]['trackData']
+                         });
+                         */
+                    }
+                    //for loop close
+                    
+                    newsRenderIndex+=data_from_wow.length-1;
+                    
+                    lazyLoadInstance = new LazyLoad({
+                        elements_selector: ".lazy"
+                    });
+                    nextPageUrl = data.data.nextPageUrl;
+                }
+            }
+        }
+    }
+    /**********************/
+
+    //init the loading news in webworker
+    worker.postMessage({event:'load_news', current_parameter:current_parameter});
+
+    //CSS CLASSES SETUP: based on device
+        mql = window.matchMedia('(max-width: 699px)');
+        if (mql.matches) {
+            document.querySelector('#indus_cont').classList.remove("indus_middle");;
+        }
+        mql = window.matchMedia('(max-width:339px)');
+        if (mql.matches) {
+            document.querySelector('#indus_cont_five').classList.add("indus_middle_five");;
+        }
+        mql = window.matchMedia('(max-width: 399px)');
+        if (mql.matches) {
+            var sel = '#all_news';
+            var coll = document.querySelector(sel).classList.add('lessthan400');
+        } else {
+            var sel = '#all_news';
+            var coll = document.querySelector(sel).classList.add('morethan400');
+        }
+    
+    </script>
+    
+    <script src="./assets/js/custom.js"></script>
+
+    <script>document.querySelector('#search_in_page').style.display = 'block';document.querySelector('#button-icon').style.display = 'block';</script>
+
+</body>
+    
+    <script src="assets/js/lazyload.min.js"></script>
+    <link rel="stylesheet" href="assets/css/indu_global.css">
+
+</html>
